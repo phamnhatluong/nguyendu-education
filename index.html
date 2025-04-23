@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trống Đồng Việt Nam</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffee69;
+            margin: 0;
+            /* padding: 20px; */
+            flex-direction: column;
+        }
+        
+        .drum-container {
+            position: relative;
+            width: 500px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .drum-container img {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        
+        .chin {
+    z-index: -99999999999999999;
+    width: 700px !important;
+    height: 700px !important;
+}
+.tam {
+    z-index: -99999999999999999;
+    width: 572px !important;
+    height: 572px !important;
+}
+.bay {
+    z-index: -99999999999999999;
+    width: 488px !important;
+    height: 488px !important;
+}
+.sau {
+    z-index: -99999999999999999;
+    width: 466px !important;
+    height: 466px !important;
+}
+.nam {
+    z-index: -99999999999999999;
+    width: 403px !important;
+    height: 403px !important;
+}
+.tu {
+    z-index: -99999999999999999;
+    width: 371px !important;
+    height: 371px !important;
+}
+.ba {
+    z-index: -99999999999999999;
+    width: 276px !important;
+    height: 276px !important;
+}
+.hai {
+    z-index: -99999999999999999;
+    width: 244px !important;
+    height: 244px !important;
+}
+.mot {
+    z-index: -99999999999999999;
+    width: 212px !important;
+    height: 212px !important;
+}
+@media screen and (max-width: 768px) {
+    .chin {
+            z-index: 1;
+            width: 330px !important;
+            height: 330px !important;
+        }
+        .tam {
+            z-index: 2;
+            width: 270px !important;
+            height: 270px !important;
+        }
+        .bay {
+            z-index: 3;
+            width: 230px !important;
+            height: 230px !important;
+        }
+        .sau {
+            z-index: 4;
+            width: 220px !important;
+            height: 220px !important;
+        }
+        .nam {
+            z-index: 5;
+            width:  190px !important;
+            height: 190px !important;
+        }
+        .tu {
+            z-index: 6;
+            width: 175px !important;
+            height: 175px !important;
+        }
+        .ba {
+            z-index: 7;
+            width: 130px !important;
+            height: 130px !important;
+        }
+        .hai {
+            z-index: 8;
+            width: 115px !important;
+            height: 115px !important;
+        }
+        .mot {
+            z-index: 9;
+            width: 100px !important;
+            height: 100px !important;
+        }
+}
+
+@keyframes rotate-clockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-counterclockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.rotate-cw {
+    animation: rotate-clockwise 20s linear infinite;
+}
+
+.rotate-ccw {
+    animation: rotate-counterclockwise 20s linear infinite;
+}
+.nguyendu {
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: 80%;
+    bottom: -20px; /* Adjust this value to position the image vertically */
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Ensure this is above the drum images */
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="drum-container">
+        <img class="chin rotate-cw" src="Vong 09.svg" alt="Vòng ngoài cùng">
+        <img class="tam rotate-ccw" src="Vong 08.svg" alt="Vòng giữa">
+        <img class="bay rotate-cw" src="Vong 07.svg" alt="Vòng trong cùng">
+        <img class="sau rotate-ccw" src="Vong 06.svg" alt="Vòng trong nhất">
+        <img class="nam rotate-cw" src="Vong 05.svg" alt="Vòng trong nhì">
+        <img class="tu rotate-ccw" src="Vong 04.svg" alt="Vòng trong tam">
+        <img class="ba rotate-cw" src="Vong 03.svg" alt="Vòng trong tứ">
+        <img class="hai rotate-ccw" src="Vong 02.svg" alt="Vòng trong ngũ">
+        <img class="mot rotate-cw" src="Vong 01.svg" alt="Vòng trong lục">
+        
+    </div>
+    <img class="nguyendu" src="anhnguyendu.png" alt="ảnh Nguyễn Du">
+    </div>
+</body>
+</html>

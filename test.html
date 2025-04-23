@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Du</title>
+    <style>
+        body {
+            background-color: #ffe882;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 16px;
+        }
+        .navbar button {
+    background-color: #fffe00;
+    color: #ff0000;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    ;
+}
+        .content {
+            display: flex;
+            justify-content: center;
+            margin-top: 16px;
+        }
+        .image-container {
+            /* background-color: #065f46; */
+            width: 50%;
+            /* height: 256px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-container span {
+            color: white;
+        }
+        .text-container {
+            background-color: #facc15;
+            width: 50%;
+            padding: 16px;
+        }
+        .text-container p {
+            color: #dc2626;
+            font-weight: bold;
+            font-size:25px;
+        }
+        .drum-container {
+            position: relative;
+            width: 500px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .drum-container img {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        
+    
+    .chin {
+        z-index: -99999999999999999;
+        width: 495px !important;
+        height: 495px !important;
+    }
+    .tam {
+        z-index: -99999999999999999;
+        width: 405px !important;
+        height: 405px !important;
+    }
+    .bay {
+        z-index: -99999999999999999;
+        width: 345px !important;
+        height: 345px !important;
+    }
+    .sau {
+        z-index: -99999999999999999;
+        width: 330px !important;
+        height: 330px !important;
+    }
+    .nam {
+        z-index: -99999999999999999;
+        width: 285px !important;
+        height: 285px !important;
+    }
+    .tu {
+        z-index: -99999999999999999;
+        width: 262.5px !important;
+        height: 262.5px !important;
+    }
+    .ba {
+        z-index: -99999999999999999;
+        width: 195px !important;
+        height: 195px !important;
+    }
+    .hai {
+        z-index: -99999999999999999;
+        width: 172.5px !important;
+        height: 172.5px !important;
+    }
+    .mot {
+        z-index: -99999999999999999;
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+
+@keyframes rotate-clockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-counterclockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.rotate-cw {
+    animation: rotate-clockwise 20s linear infinite;
+}
+
+.rotate-ccw {
+    animation: rotate-counterclockwise 20s linear infinite;
+}
+.nguyendu {
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: 70%;
+    bottom: -20px; /* Adjust this value to position the image vertically */
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Ensure this is above the drum images */
+}
+header{
+    background-color: #1e40af;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 10;
+}
+.avt{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <a><img src="307040382_494866159317397_5608239890927850797_n.jfif" class="avt" alt=""></a>
+        <button>Tiểu sử</button>
+        <button>Truyện Kiều</button>
+        <button>Khu Di tích nguyễn Du</button>
+        <button> Sức Ảnh hưởng</button>
+        <button>Đăng nhập</button>
+    </div>
+</header>
+    <div class="content">
+        <div class="image-container">
+            <div class="drum-container">
+                <img class="chin rotate-cw" src="Vong 09.svg" alt="Vòng ngoài cùng">
+                <img class="tam rotate-ccw" src="Vong 08.svg" alt="Vòng giữa">
+                <img class="bay rotate-cw" src="Vong 07.svg" alt="Vòng trong cùng">
+                <img class="sau rotate-ccw" src="Vong 06.svg" alt="Vòng trong nhất">
+                <img class="nam rotate-cw" src="Vong 05.svg" alt="Vòng trong nhì">
+                <img class="tu rotate-ccw" src="Vong 04.svg" alt="Vòng trong tam">
+                <img class="ba rotate-cw" src="Vong 03.svg" alt="Vòng trong tứ">
+                <img class="hai rotate-ccw" src="Vong 02.svg" alt="Vòng trong ngũ">
+                <img class="mot rotate-cw" src="Vong 01.svg" alt="Vòng trong lục">
+                <img class="nguyendu" src="anhnguyendu.png" alt="ảnh Nguyễn Du">
+            </div>
+            
+        </div>
+        <div class="text-container">
+            <p>Đại thi hào Nguyễn Du (1765-1820), tên tự là Tố Như, hiệu Thanh Hiên, quê ở Tiên Điền, cháu nội ông Phụ Đức, là con trai thứ 7 của Xuân Nhạc công. Sinh ra trong một gia đình đại quý tộc, gia thế của Nguyễn Du được coi là có thế lực bậc nhất đương thời. Gắn với những biến cố lịch sử của giai đoạn cuối thế kỷ XVIII-XIX, Nguyễn Du có một cuộc đời từng trải, phiêu bạt. Từng đỗ tam trường, nhiều lần được bổ làm quan dưới triều đại Tây Sơn, nhưng ông không chịu được cảnh nghiệp quan trường, nhiều lúc cáo bệnh về quê. Năm 1820, ông được cử làm Chánh sứ Trung Quốc, nhưng chưa kịp đi, thì bị bệnh, qua đời. Ông để lại nhiều tác phẩm văn chương có giá trị, nổi tiếng nhất là <a style="">Truyện Kiều</a>. Năm 1965, Nguyễn Du được Hội đồng Hòa bình thế giới công nhận là Danh nhân văn hóa thế giới.</p>
+        </div>
+    </div>
+    <script type="application/javascript">
+        (function(w,d,s,o,f,js,fjs){w[o]=w[o]||function(){(w[o].q=w[o].q||[]).push(arguments);};(js=d.createElement(s)),(fjs=d.getElementsByTagName(s)[0]);js.id=o;js.src=f;js.async=1;js.referrerPolicy = "origin";fjs.parentNode.insertBefore(js,fjs);})(window,document,"script","copilot","https://script.copilot.live/v1/copilot.min.js?tkn=cat-pdov4c0s");
+        copilot("init",{});
+        </script>
+</body>
+</html>
